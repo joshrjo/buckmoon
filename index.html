@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Buck Moon</title>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/3/w3.css">
+<link rel="stylesheet" href="/w3css/3/w3.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<body>
+
+<!-- Navigation -->
+<nav class="w3-bar w3-black">
+  <a href="#home" class="w3-button w3-bar-item">Home</a>
+  <a href="#about" class="w3-button w3-bar-item">About</a>
+  <a href="#contact" class="w3-button w3-bar-item">Contact</a>
+</nav>
+
+<!-- Slide Show -->
+<section>
+  <img class="mySlides" src="images/Derecho.png"
+  style="width:100%">
+</section>
+
+<!-- Band Description -->
+<section class="w3-container w3-center w3-content" style="max-width:600px">
+  <h2 class="w3-wide">About</h2>
+  <p class="w3-opacity"><i>Buck Moon</i></p>
+  <p class="w3-justify">Buck Moon is an electronic music producer from Philadelphia, PA.</p>
+</section>
+
+<!-- Band Members -->
+<section class="w3-row-padding w3-center w3-light-grey">
+  <article class="w3-third">
+    <p>"Technology"</p>
+    <a href="https://open.spotify.com/album/7anWYRUGDatf25re2umlMq?si=TvsLrouUTk-t0w4vR_ihvA">Listen On Spotify</a>
+  </article>
+  <article class="w3-third">
+    <p>"Derecho"</p>
+    <a href="https://open.spotify.com/album/3MeosNDDkZmO2VKyW9DVIM?si=TVpVwX5ySUmytWlwkQhAHQ">Listen On Spotify</a>
+  </article>
+  <article class="w3-third">
+    <p>"The Shade"</p>
+    <a href="https://open.spotify.com/album/08h1fAfnmSs7MvX9aAOCqF?si=BlJbd5OAR0G5u41eqwvO-A">Listen on Spotify</a>
+  </article>
+</section>
+
+<!-- Footer -->
+<footer class="w3-container w3-padding-64 w3-center w3-black w3-xlarge">
+  <a href="https://www.facebook.com/buckmoonsongs"><i class="fa fa-facebook-official"></i></a>
+  <a href="https://twitter.com/buckmoonmusic"><i class="fa fa-twitter"></i></a>
+  <a href="https://www.instagram.com/buckmoonmusic/"><i class="fa fa-instagram"></i></a>
+  <p class="w3-medium">
+  Powered by Josh Johnson, Aspiring Web Designer, 2020
+  </p>
+</footer>
+
+<script>
+// Automatic Slideshow - change image every 3 seconds
+var myIndex = 0;
+carousel();
+
+function carousel() {
+  var i;
+  var x = document.getElementsByClassName("mySlides");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  myIndex++;
+  if (myIndex > x.length) {myIndex = 1}
+  x[myIndex-1].style.display = "block";
+  setTimeout(carousel, 3000);
+}
+</script>
+
+</body>
+</html>
